@@ -1,6 +1,4 @@
-
-/* ---------- Reset ---------- */
-
+/*  */
 * {
     margin: 0;
     padding: 0;
@@ -17,16 +15,16 @@ body {
     flex-direction: column;
 }
 
-/* ---------- Colors ----------
+/* default colors
 
 Primary : #2563EB
 Dark    : #0F172A
 Accent  : #22C55E
 
--------------------------------- */
+*/
 
 
-/* ---------- Navbar ---------- */
+/* Navbar */
 
 nav {
     background: #0F172A;
@@ -40,7 +38,7 @@ nav h1 {
 }
 
 
-/* ---------- Main ---------- */
+/* Main section */
 
 main {
     flex: 1;
@@ -50,7 +48,7 @@ main {
 }
 
 
-/* ---------- Theater ---------- */
+/* Theater section */
 
 #theater {
     background: white;
@@ -62,29 +60,26 @@ main {
 }
 
 
-/* ---------- Screen ---------- */
+/* Screen visual */
 
 #screen-div {
     width: 85%;
     margin: auto;
     margin-bottom: 40px;
 
-    color: black;
-
     padding: 14px;
-
     border-top: 4px solid #0F172A;
     border-radius: 100%;
 
+    color: black;
+
     text-align: center;
-
     letter-spacing: 3px;
-
     font-weight: 600;
 }
 
 
-/* ---------- Legend ---------- */
+/* Legend */
 
 #seat-legend {
     display: flex;
@@ -119,36 +114,28 @@ main {
 }
 
 
-/* ---------- Seat Grid ---------- */
+/* Seat Grid setup */
 
 #seat-container {
     display: grid;
-
     grid-template-columns: repeat(25, 1fr);
-
     gap: 10px;
 }
 
 
-/* ---------- Single Seat ---------- */
+/* Single Seat styling */
 
 .seat {
     background: #E2E8F0;
-
     border: none;
-
     border-radius: 10px;
-
     padding: 10px 0;
 
     text-align: center;
-
     font-size: .8rem;
-
     font-weight: 500;
 
     cursor: pointer;
-
     transition: .2s;
 }
 
@@ -156,12 +143,11 @@ main {
     transform: translateY(-3px);
 
     background: #2563EB;
-
     color: white;
 }
 
 
-/* ---------- Booked State ---------- */
+/* Booked State */
 
 .seat.booked {
     background: #22C55E;
@@ -169,7 +155,7 @@ main {
 }
 
 
-/* ---------- Form ---------- */
+/* Form setup */
 
 #booking-form {
     margin-top: 50px;
@@ -187,17 +173,12 @@ main {
 
 #ticket-input {
     width: 250px;
-
     padding: 15px;
-
     border: 2px solid #CBD5E1;
-
     border-radius: 12px;
-
     outline: none;
 
     font-size: 1rem;
-
     transition: .2s;
 }
 
@@ -208,21 +189,16 @@ main {
 
 #booking-form button {
     border: none;
-
     background: #2563EB;
-
     color: white;
 
     padding: 15px 28px;
-
     border-radius: 12px;
 
     font-size: 1rem;
-
     font-weight: 600;
 
     cursor: pointer;
-
     transition: .2s;
 }
 
@@ -231,57 +207,48 @@ main {
 }
 
 
-/* ---------- Footer ---------- */
+/* Footer */
 
 footer {
     background: #0F172A;
-
     color: white;
 
     text-align: center;
-
     padding: 25px;
 }
 
 
-/* ---------- Responsive ---------- */
+/* Adding Responsiveness */
 
+/* Tab Screen */
 @media(max-width:1200px) {
-
     #seat-container {
         grid-template-columns: repeat(10, 1fr);
     }
-
 }
 
-
+/* Mobile Screen */
 @media(max-width:768px) {
-
     #theater {
         padding: 25px;
     }
-
     nav h1 {
         text-align: center;
         font-size: 1.6rem;
     }
-
     #seat-container {
         grid-template-columns: repeat(5, 1fr);
     }
-
 }
 
+/* Small Mobile Screen */
 
 @media(max-width:500px) {
-
     #seat-container {
         gap: 8px;
     }
-
     .seat {
         font-size: .7rem;
         padding: 8px 0;
     }
-
 }
