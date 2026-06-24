@@ -17,9 +17,8 @@ const generateSeats = () => {
             const seat = document.createElement("div");
 
             seat.classList.add("seat");
-            seat.setAttribute('title', 'Click to Select');
+            seat.setAttribute('title', 'Type this seat number to select');
             seat.id = seatNumber;
-
             seat.textContent = seatNumber;
 
             if (bookedSeats.includes(seatNumber)) {
